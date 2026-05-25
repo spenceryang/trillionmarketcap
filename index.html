@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trillion Market Cap | Assets Worth $1 Trillion or More</title>
+  <meta name="description" content="A source-backed registry of every major asset, company, commodity, cryptocurrency, and private valuation worth one trillion United States dollars or more." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="canonical" href="https://trillionmarketcap.com/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/styles.css" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Trillion Market Cap" />
+  <meta property="og:title" content="Trillion Market Cap | Assets Worth $1 Trillion or More" />
+  <meta property="og:description" content="A reference registry of the assets that cannot be priced without thirteen digits." />
+  <meta property="og:url" content="https://trillionmarketcap.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Trillion Market Cap" />
+  <meta name="twitter:description" content="Every asset on Earth worth one trillion dollars or more." />
+
+  <script type="application/ld+json" id="structuredData"></script>
+</head>
+<body>
+  <a class="skip-link" href="#registry">Skip to registry</a>
+
+  <header class="site-header" aria-label="Site header">
+    <div class="frame header-grid">
+      <a class="brand" href="/" aria-label="Trillion Market Cap home">
+        Trillion <span>Market</span> Cap
+      </a>
+      <p class="header-note">Assets too large for intuition</p>
+      <nav class="header-nav" aria-label="Primary navigation">
+        <a href="#registry">Registry</a>
+        <a href="#perspective">Perspective</a>
+        <a href="#methodology">Methodology</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero frame" aria-labelledby="hero-title">
+      <div class="hero-kicker">Assets worth one trillion United States dollars or more</div>
+      <div class="hero-main">
+        <h1 id="hero-title">The thirteen-digit registry.</h1>
+        <p>From the above-ground gold supply to AI infrastructure, payment networks, oil reserves, and cryptographic money, this is the short list of assets large enough to reshape markets and nations.</p>
+      </div>
+      <dl class="stat-grid" aria-label="Registry summary">
+        <div>
+          <dt>Members</dt>
+          <dd id="statMembers">18</dd>
+        </div>
+        <div>
+          <dt>Combined cap</dt>
+          <dd id="statCap">$73.7T</dd>
+        </div>
+        <div>
+          <dt>Largest asset</dt>
+          <dd>Gold</dd>
+        </div>
+        <div>
+          <dt>First private</dt>
+          <dd>SpaceX</dd>
+        </div>
+      </dl>
+      <div class="data-status" id="dataStatus" aria-label="Data refresh status">
+        <span>Data mode</span>
+        <b>Loading</b>
+      </div>
+    </section>
+
+    <section class="tools frame" aria-label="Registry controls">
+      <div class="filter-panel">
+        <p>Filter</p>
+        <div class="filter-group" id="filterGroup" role="list" aria-label="Filter assets by sector">
+          <button class="filter-btn active" type="button" data-filter="all">All</button>
+          <button class="filter-btn" type="button" data-filter="tech">Technology</button>
+          <button class="filter-btn" type="button" data-filter="metal">Metals</button>
+          <button class="filter-btn" type="button" data-filter="crypto">Crypto</button>
+          <button class="filter-btn" type="button" data-filter="finance">Finance</button>
+          <button class="filter-btn" type="button" data-filter="energy">Energy</button>
+          <button class="filter-btn" type="button" data-filter="health">Health</button>
+          <button class="filter-btn" type="button" data-filter="consumer">Consumer</button>
+          <button class="filter-btn" type="button" data-filter="retail">Retail</button>
+          <button class="filter-btn" type="button" data-filter="private">Private</button>
+        </div>
+      </div>
+      <label class="sort-panel" for="sortSelect">
+        <span>Sort</span>
+        <select id="sortSelect">
+          <option value="cap-desc">Market cap, high to low</option>
+          <option value="cap-asc">Market cap, low to high</option>
+          <option value="change-1d">Daily change</option>
+          <option value="change-30d">Monthly change</option>
+          <option value="alpha">Alphabetical</option>
+          <option value="firstT">Date crossed $1T</option>
+          <option value="founded">Founded year</option>
+        </select>
+      </label>
+    </section>
+
+    <section class="group-tools frame" aria-label="Registry group filters">
+      <p>Groups</p>
+      <div class="filter-group" id="groupFilter"></div>
+    </section>
+
+    <section class="registry frame" id="registry" aria-labelledby="registry-title">
+      <div class="section-title">
+        <p>Canonical list</p>
+        <h2 id="registry-title">Trillion-dollar assets ranked by market capitalization</h2>
+      </div>
+      <div class="table-head" aria-hidden="true">
+        <span>Rank</span>
+        <span>Asset</span>
+        <span>Value / trend</span>
+      </div>
+      <div id="assetList" class="asset-list" aria-live="polite"></div>
+      <noscript>
+        <ol class="noscript-list">
+          <li>Gold, estimated $31.00T</li>
+          <li>NVIDIA, $5.41T</li>
+          <li>Alphabet, $4.66T</li>
+          <li>Apple, $4.44T</li>
+          <li>Microsoft, $3.13T</li>
+          <li>Amazon, $2.85T</li>
+          <li>TSMC, $2.08T</li>
+          <li>SpaceX, target IPO valuation near $2.00T</li>
+          <li>Broadcom, $1.98T</li>
+          <li>Saudi Aramco, $1.80T</li>
+          <li>Tesla, $1.57T</li>
+          <li>Bitcoin, $1.56T</li>
+          <li>Meta Platforms, $1.54T</li>
+          <li>Samsung, $1.21T</li>
+          <li>Walmart, $1.04T</li>
+          <li>Berkshire Hathaway, $1.04T</li>
+        </ol>
+      </noscript>
+    </section>
+
+    <section class="timeline frame" aria-labelledby="timeline-title">
+      <div class="section-title">
+        <p>Threshold history</p>
+        <h2 id="timeline-title">When each asset crossed $1T</h2>
+      </div>
+      <div id="timelineList" class="timeline-list"></div>
+    </section>
+
+    <section class="perspective frame" id="perspective" aria-labelledby="perspective-title">
+      <div class="section-title">
+        <p>Scale</p>
+        <h2 id="perspective-title">A trillion dollars is not intuitive</h2>
+      </div>
+      <div class="perspective-grid">
+        <article>
+          <span>Gold vs. NVIDIA</span>
+          <strong>7.3×</strong>
+          <p>The above-ground gold supply is worth roughly seven times the market capitalization of NVIDIA.</p>
+        </article>
+        <article>
+          <span>Bitcoin vs. gold</span>
+          <strong>4.6%</strong>
+          <p>Bitcoin is large enough to rank with sovereign-scale assets, but remains a small fraction of gold.</p>
+        </article>
+        <article>
+          <span>Top three</span>
+          <strong>$44.5T</strong>
+          <p>Gold, silver, and NVIDIA together exceed the annual economic output of most country groupings.</p>
+        </article>
+        <article>
+          <span>Watchlist</span>
+          <strong>4</strong>
+          <p>Several private and public assets are close enough to the threshold to track separately.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="methodology frame" id="methodology" aria-labelledby="methodology-title">
+      <div class="section-title">
+        <p>Methodology</p>
+        <h2 id="methodology-title">What counts as market capitalization</h2>
+      </div>
+      <div class="method-grid">
+        <article>
+          <h3>Public companies</h3>
+          <p>Equity market capitalization is calculated as share price multiplied by shares outstanding. On Vercel, API-backed rows can refresh hourly through the registry endpoint.</p>
+        </article>
+        <article>
+          <h3>Commodities</h3>
+          <p>Gold and silver are estimated from above-ground supply multiplied by spot price. These are methodology estimates, not exchange-listed market caps.</p>
+        </article>
+        <article>
+          <h3>Cryptoassets</h3>
+          <p>Crypto market capitalization is circulating supply multiplied by the latest traded market price.</p>
+        </article>
+        <article>
+          <h3>Private companies</h3>
+          <p>Private valuations use the latest credible disclosed funding round, fund mark, tender offer, IPO target, or transaction report, and are labeled separately from live public market caps.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer frame">
+    <div>
+      <strong>Trillion Market Cap</strong>
+      <p>A reference registry of the assets that cannot be priced without thirteen digits. Nothing here is investment advice.</p>
+    </div>
+    <div>
+      <span>Updated</span>
+      <p>20 May 2026</p>
+    </div>
+    <div>
+      <span>Policies</span>
+      <p><a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>

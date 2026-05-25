@@ -1,0 +1,17 @@
+{
+  "name": "trillion-market-cap",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Swiss data registry of assets worth one trillion dollars or more.",
+  "scripts": {
+    "dev": "python3 -m http.server 4173",
+    "start": "python3 -m http.server 4173"
+  },
+  "keywords": [
+    "market cap",
+    "trillion dollar companies",
+    "gold market capitalization",
+    "bitcoin market capitalization",
+    "financial data"
+  ]
+}
